@@ -1,0 +1,1474 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap');
+a {
+    text-decoration: none; /* Убираем подчеркивание у ссылок. */
+}
+
+/* Стили для фонового изображения */
+.fon_img {
+    width: 100%; /* Ширина изображения на 100% родительского элемента. */
+    height: 1080px; /* Высота изображения 1080 пикселей. */
+    background-repeat: no-repeat; /* Запрещаем повторение фонового изображения. */
+    object-fit: cover; /* Масштабируем фон для заполнения элемента. */
+}
+
+/* Полупрозрачный фоновый цвет */
+.fon_violet {
+    position: absolute; /* Абсолютное позиционирование. */
+    width: 100%; /* Ширина 100%. */
+    height: 1080px; /* Высота 1080 пикселей. */
+    background: rgba(63, 0, 60, 0.40); /* Полупрозрачный фоновый цвет. */
+}
+
+/* Стили для фонового элемента с z-index */
+.fon_down {
+    width: 100%; /* Ширина 100%. */
+    position: absolute; /* Абсолютное позиционирование. */
+    z-index: 0; /* Устанавливаем уровень наложения элемента. */
+}
+
+/* Контейнер для логотипа */
+.logo_container {
+    display: flex; /* Используем flexbox для расположения. */
+    align-items: center; /* Вертикально выравниваем элементы по центру. */
+}
+
+/* Стили для текста логотипа */
+.medium-logo-text {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 20px; /* Размер шрифта 20px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    margin: 0; /* Убираем внешние отступы. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Стили для заголовка */
+header {
+    position: relative; /* Относительное позиционирование. */
+    display: flex; /* Используем flexbox. */
+    top: 85px; /* Сдвиг вниз на 85 пикселей. */
+}
+
+/* Стили для текста города */
+.city p {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 20px; /* Размер шрифта 20px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    margin-bottom: 15px; /* Отступ снизу 15px. */
+}
+
+/* Контейнер для города */
+.city {
+    display: flex; /* Используем flexbox. */
+    align-items: center; /* Вертикально выравниваем элементы по центру. */
+    margin: 0 70px; /* Горизонтальные отступы по 70px. */
+}
+
+/* Контейнер для времени */
+.time {
+    display: flex; /* Используем flexbox для времени. */
+    align-items: center; /* Вертикально выравниваем элементы по центру. */
+}
+
+/* Стили для текста времени */
+.time p {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 20px; /* Размер шрифта 20px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    margin: 0 0 0 15px; /* Отступы: сверху, справа и снизу 0, слева 15px. */
+}
+
+/* Контейнер для элементов */
+.container_items {
+    display: flex; /* Используем flexbox. */
+    align-items: center; /* Вертикально выравниваем элементы по центру. */
+}
+
+/* Стили для начального текста */
+.start-kin {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 36px; /* Размер шрифта 36px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    margin: 0; /* Убираем внешние отступы. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Контейнер блока */
+.container_block {
+    width: 80%; /* Ширина 80% родительского элемента. */
+    max-width: 1200px; /* Максимальная ширина 1200px. */
+    margin: 0 auto; /* Центрируем блок по горизонтали. */
+}
+
+/* Стили для всего тела документа */
+body {
+    margin: 0; /* Убираем отступы для всего тела. */
+    background-color: #1A1A1A; /* Темный фон страницы. */
+}
+
+/* Стили для одного списка элементов */
+.onelist_container {
+    display: flex; /* Используем flexbox. */
+    justify-content: space-between; /* Распределяем элементы по горизонтали. */
+}
+
+/* Стили для блока с основным содержимым */
+.body_block {
+    position: relative; /* Относительное позиционирование. */
+    top: 290px; /* Сдвиг вниз на 290 пикселей. */
+}
+
+/* Стили для заголовка текста */
+.text_title {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 36px; /* Размер шрифта 36px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    margin: 0; /* Убираем внешние отступы. */
+}
+
+/* Стили для параграфа под заголовком */
+.text_title_p {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 20px; /* Размер шрифта 20px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    margin-top: 20px; /* Отступ сверху 20px. */
+}
+
+/* Заголовок формы */
+.title_form_text {
+    color: #FFF; /* Цвет текста белый. */
+    text-align: center; /* Центрируем текст. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 32px; /* Размер шрифта 32px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    margin: 56px 0 21px; /* Отступы: сверху 56px, снизу 21px. */
+}
+
+/* Контейнер для формы */
+.form_cont {
+    margin: -50px 0 0 0; /* Отступ сверху -50px (приближает к верхней части). */
+    border: 5px solid #F66; /* Рамка 5px розового цвета. */
+    box-shadow: 0px 0px 50px 20px rgba(255, 102, 102, 0.45); /* Тень элемента. */
+    width: 438px; /* Ширина блока 438px. */
+    height: 550px; /* Высота блока 550px. */
+    flex-shrink: 0; /* Не сжимаем блок в flex-контейнере. */
+    animation: shadow-blink 2s infinite alternate; /* Добавляем анимацию «shadow-blink». */
+}
+
+/* Определение ключевых кадров для анимации тени */
+@keyframes shadow-blink {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 102, 102, 0.45); /* Начальная тень. */
+    }
+    100% {
+        box-shadow: 0px 0px 50px 20px rgba(255, 102, 102, 0.45); /* Финальная тень. */
+    }
+}
+
+/* Стили для инпутов форм */
+form input {
+    border-radius: 6px; /* Округленные углы. */
+    border: 1px solid #E1E1E1; /* Рамка 1px светло-серого цвета. */
+    background: white; /* Белый фон. */
+    width: 305px; /* Ширина инпута 305px. */
+    height: 57.65px; /* Высота инпута 57.65px. */
+    flex-shrink: 0; /* Не сжимаем инпут в flex-контейнере. */
+    margin: 23px 0 0 0; /* Отступ сверху 23px. */
+    color: black; /* Цвет текста черный. */
+    font-family: Roboto; /* Шрифт Roboto. */
+    font-size: 16px; /* Размер шрифта 16px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 400; /* Обычный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    padding: 0 20px; /* Внутренние отступы: 0 сверху и снизу, 20px слева и справа. */
+}
+
+/* Стили для формы */
+form {
+    display: flex; /* Используем flexbox для формы. */
+    flex-direction: column; /* Вертикальная компоновка элементов. */
+    justify-content: center; /* Центрируем содержимое по вертикали. */
+    align-items: center; /* Центрируем содержимое по горизонтали. */
+}
+
+/* Стили для кнопки в форме */
+form a {
+    margin: 30px 0 0 0; /* Отступы: сверху 30px. */
+    background-color: #FE4646; /* Красный фон кнопки. */
+    width: 167px; /* Ширина кнопки 167px. */
+    height: 42px; /* Высота кнопки 42px. */
+    border: none; /* Без рамки. */
+    border-radius: 20px; /* Округленные углы. */
+    color: #FFF; /* Цвет текста белый. */
+    text-align: center; /* Центрируем текст. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 14px; /* Размер шрифта 14px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    display: flex; /* Используем flexbox для кнопки. */
+    justify-content: center; /* Центрируем содержимое по горизонтали. */
+    align-items: center; /* Центрируем содержимое по вертикали. */
+    cursor: pointer; /* Курсор становится указателем при наведении. */
+}
+
+/* Заголовок блока текста */
+.two_block_text_title {
+    width: 545px; /* Ширина текста 545px. */
+    flex-shrink: 0; /* Не сжимаем текст в flex-контейнере. */
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 40px; /* Размер шрифта 40px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Подзаголовок блока текста */
+.pod_text_two_title {
+    width: 545px; /* Ширина текста 545px. */
+    flex-shrink: 0; /* Не сжимаем текст в flex-контейнере. */
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 24px; /* Размер шрифта 24px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 400; /* Обычный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Отступ для одного блока текста */
+.text_mar {
+    margin: -80px 0 0 0; /* Отступ сверху -80px (поднимаем блок выше). */
+}
+
+/* Контейнер для двух блоков */
+.two_block_one {
+    display: flex; /* Используем flexbox. */
+    align-items: flex-end; /* Вертикальное выравнивание элементов по нижнему краю. */
+}
+
+/* Отступы для изображений */
+.img_block {
+    margin: 0 50px; /* Горизонтальные отступы по 50px. */
+}
+
+/* Заголовок третьего блока */
+.three_block_container h2 {
+    text-align: center; /* Центрируем текст. */
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 40px; /* Размер шрифта 40px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Стили для изображений схемы */
+.sheme_img {
+    margin: 58px 0 0 0; /* Отступ сверху 58px. */
+    width: 1022px; /* Ширина изображения 1022px. */
+    height: 629px; /* Высота изображения 629px. */
+    flex-shrink: 0; /* Не сжимаем изображение в flex-контейнере. */
+}
+
+/* Стили для текста условия */
+.text_stand {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 40px; /* Размер шрифта 40px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Стили для текста в красном цвете */
+.text_red {
+    color: #FE4646; /* Цвет текста красный. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 40px; /* Размер шрифта 40px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Отступы для элемента */
+.pred_two {
+    margin: 50px 0 0 70px; /* Отступы: сверху 50px, справа 0, снизу 0, слева 70px. */
+}
+
+/* Отступы для параграфов внутри элемента */
+.pred_two p {
+    margin: 10px 0 0 0; /* Отступы: сверху 10px, все остальные 0. */
+}
+
+/* Стили для карточки */
+.card {
+    width: 330px; /* Ширина карточки 330px. */
+    height: 672px; /* Высота карточки 672px. */
+    flex-shrink: 0; /* Не сжимаем карточку в flex-контейнере. */
+    border-radius: 0px 0px 24px 24px; /* Закругленные нижние углы. */
+    background: #111; /* Темный фон. */
+    box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.25); /* Тень у карточки. */
+    margin: 0 40px 0 0; /* Отступы: сразу 0, справа 40px. */
+    display: flex; /* Используем flexbox для карточки. */
+    flex-direction: column; /* Вертикальная компоновка. */
+    justify-content: space-between; /* Распределяем элементы по вертикали. */
+}
+
+/* Отступы для элемента c3 */
+.c3 {
+    margin: 0; /* Убираем отступы. */
+}
+
+/* Контейнер для карточек */
+.div_card_container {
+    display: flex; /* Используем flexbox для контейнера карточек. */
+    margin: 53px 0; /* Отступы: сверху и снизу 53px. */
+    justify-content: center; /* Центрируем содержимое по горизонтали. */
+}
+
+/* Стили для изображений карточки */
+.card_img {
+    width: 100%; /* Ширина изображения карточки 100%. */
+    border-radius: 0px 0px 20px 20px; /* Закругленные нижние углы. */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); /* Тень у изображения. */
+    margin: 0; /* Убираем отступы. */
+    height: 200px; /* Высота изображения 200px. */
+}
+
+/* Заголовок карточки */
+.card h1 {
+    color: #FFF; /* Цвет текста заголовка белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 32px; /* Размер шрифта 32px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Контейнер для внутренних элементов карточки */
+.cont_card {
+    margin: 0 20px; /* Горизонтальные отступы по 20px. */
+    display: flex; /* Используем flexbox для контейнера. */
+    flex-direction: column; /* Вертикальная компоновка. */
+    height: 320px; /* Высота контейнера 320px. */
+}
+
+/* Стили для блока цены и времени */
+.price_and_time {
+    margin: 10px 20px 10px; /* Отступы: сверху и снизу 10px, справа и слева 20px. */
+}
+
+/* Стили для красного круга */
+.curcle_red {
+    width: 10px; /* Ширина красного круга 10px. */
+    height: 11px; /* Высота красного круга 11px. */
+    flex-shrink: 0; /* Не сжимаем круг в flex-контейнере. */
+    border-radius: 20px; /* Закругленный круг. */
+    background-color: #FE4646; /* Красный фон. */
+    filter: drop-shadow(0px 0px 10px #FE4646); /* Тень у круга. */
+    margin: 0 13px 0 0; /* Отступы: сразу 0, справа 13px. */
+}
+
+/* Стили для блока результата */
+.pod_result {
+    display: flex; /* Используем flexbox для отображения результата. */
+    align-items: center; /* Вертикально выравниваем элементы по центру. */
+}
+
+/* Стили для параграфов в блоке результата */
+.pod_result p {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 13px; /* Размер шрифта 13px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Стили для текстов времени в зале */
+.time_zal {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 20px; /* Размер шрифта 20px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    margin: 10px 0 0 0; /* Отступы: сверху 10px, остальные 0. */
+}
+
+/* Стили для цен в зале */
+.price_zal {
+    margin: 10px 0 0 0; /* Отступы: сверху 10px, остальные 0. */
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 26px; /* Размер шрифта 26px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    color: #FFFFFF; /* Цвет текста белый (дублирование для ясности). */
+    text-shadow: /* Устанавливаем множественные тени для текста. */
+            -0   -1px 0   #FE4646,
+            0   -1px 0   #FE4646,
+            -0    1px 0   #FE4646,
+            0    1px 0   #FE4646,
+            -1px -0   0   #FE4646,
+            1px -0   0   #FE4646,
+            -1px  0   0   #FE4646,
+            1px  0   0   #FE4646,
+            -1px -1px 0   #FE4646,
+            1px -1px 0   #FE4646,
+            -1px  1px 0   #FE4646,
+            1px  1px 0   #FE4646,
+            -1px -1px 0   #FE4646,
+            1px -1px 0   #FE4646,
+            -1px  1px 0   #FE4646,
+            1px  1px 0   #FE4646; /* Список значений тени текста. */
+}
+
+/* Стили для кнопки бронирования */
+.bron_but {
+    background-color: #111; /* Темный фон кнопки. */
+    color: white; /* Цвет текста белый. */
+    width: 141px; /* Ширина кнопки 141px. */
+    height: 38px; /* Высота кнопки 38px. */
+    flex-shrink: 0; /* Не сжимаем кнопку в flex-контейнере. */
+    border-radius: 22px; /* Округленные углы. */
+    border: 1px solid #FE4646; /* Рамка 1px красного цвета. */
+    box-shadow: 0px 0px 10px 0px #FF1C1C; /* Тень у кнопки. */
+    display: flex; /* Используем flexbox для кнопки. */
+    align-items: center; /* Центрируем содержимое по центру. */
+    justify-content: center; /* Центрируем содержимое по горизонтали. */
+    color: #FFF; /* Цвет текста белый. */
+    text-align: center; /* Центрируем текст. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 12px; /* Размер шрифта 12px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Контейнер для кнопок */
+.button_cont {
+    position: relative; /* Относительное позиционирование. */
+    display: flex; /* Используем flexbox для контейнера кнопок. */
+    justify-content: flex-end; /* Выравниваем все элементы по правому краю. */
+    bottom: 20px; /* Сдвиг вниз на 20px. */
+    right: 30px; /* Сдвиг вправо на 30px. */
+}
+
+/* Заголовок четвертого блока */
+.title_four h1 {
+    text-align: center; /* Центрируем текст заголовка. */
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 40px; /* Размер шрифта 40px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Стили для текста в классах карточек */
+.card_class_stand p {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 40px; /* Размер шрифта 40px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    margin: 0 20px 0 0; /* Отступы: сверху 0, справа 20px, снизу 0, слева 0. */
+}
+
+/* Контейнер для классических карточек */
+.card_class_stand {
+    display: flex; /* Используем flexbox для компоновки. */
+    align-items: center; /* Вертикально выравниваем элементы по центру. */
+    width: 90%; /* Ширина 90% родительского элемента. */
+    margin: 0 auto; /* Центрируем блок по горизонтали. */
+}
+
+/* Красная полоска */
+.arro {
+    width: 90%; /* Ширина элемента 90%. */
+    height: 8px; /* Высота элемента 8px. */
+    background: #FE4646; /* Красный фон. */
+}
+
+/* Стили для карточки в четвертом блоке */
+.card_item_four_cont {
+    width: 330px; /* Ширина карточки 330px. */
+    height: 279px; /* Высота карточки 279px. */
+    flex-shrink: 0; /* Не сжимаем карточку в flex-контейнере. */
+    border-radius: 0px 0px 24px 24px; /* Закругленные нижние углы. */
+    background: #111; /* Темный фон карточки. */
+    box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.25); /* Тень у карточки. */
+    margin: 40px 40px 0 0; /* Отступы: сверху 40px, справа 40px. */
+}
+
+/* Стили для блока сортировки */
+.sort {
+    display: flex; /* Используем flexbox для сортировки. */
+    justify-content: center; /* Центрируем содержимое по горизонтали. */
+}
+
+/* Отступы для элемента cc3 */
+.cc3 {
+    margin: 40px 0; /* Отступы: сверху и снизу 40px. */
+}
+
+/* Стили для кнопки номера */
+.button_number {
+    display: flex; /* Используем flexbox для кнопки номера. */
+    justify-content: space-between; /* Распределяем элементы по краям. */
+    align-items: center; /* Центрируем элементы по вертикали. */
+    margin: 20px 30px; /* Отступы: 20px сверху и снизу, 30px слева и справа. */
+}
+
+/* Стили для текста номера кнопки */
+.button_number p {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 32px; /* Размер шрифта 32px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    margin: 0; /* Убираем внешние отступы. */
+}
+
+/* Стили для текстов с важностью */
+.resd {
+    color: #FF9090 !important; /* Устанавливаем цвет с важностью. */
+}
+
+.resd2 {
+    color: #FE4646 !important; /* Устанавливаем цвет с важностью. */
+}
+
+/* Общие стили для элементов с flexbox */
+.flex {
+    display: flex; /* Используем flexbox. */
+    align-items: center; /* Вертикальное выравнивание элементов по центру. */
+}
+
+/* Стили для текстового элемента */
+.text_a {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 15px; /* Размер шрифта 15px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    width: 286px; /* Ширина 286px. */
+    height: 70px; /* Высота 70px. */
+    flex-shrink: 0; /* Не сжимаем текст в flex-контейнере. */
+}
+
+/* Отступы для элемента rr */
+.rr {
+    margin: 0 50px 0 0; /* Отступы: сверху и снизу 0, справа 50px. */
+}
+
+/* Отступы для пятого блока */
+.five_block {
+    margin: 40px 0; /* Отступы: сверху и снизу 40px. */
+}
+
+/* Контейнер для шестого блока */
+.items_block_6 {
+    display: flex; /* Используем flexbox. */
+    flex-direction: column; /* Вертикальное направление. */
+}
+
+/* Элемент в шестом блоке */
+.item_block {
+    padding: 10px; /* Внутренние отступы 10px. */
+    cursor: pointer; /* Указатель мыши при наведении. */
+    background: #000; /* Черный фон. */
+}
+
+/* Элемент для основного текста */
+.item {
+    display: flex; /* Используем flexbox для элементов. */
+    align-items: center; /* Центрируем элементы по вертикали. */
+}
+
+/* Стили для текстов в элементах */
+.item p {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 15px; /* Размер шрифта 15px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    margin: 0 20px; /* Горизонтальные отступы по 20px. */
+}
+
+/* Стили для основного текста с важностью */
+.main-text {
+    margin: 0 0 0 50px !important; /* Устанавливаем отступы с важностью. */
+}
+
+/* Стили для параграфов в контенте */
+.content p {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 15px; /* Размер шрифта 15px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Размеры изображений с параметрами */
+.plus img {
+    width: 20px; /* Ширина изображения 20px. */
+    height: 20px; /* Высота изображения 20px. */
+    margin-left: 10px; /* Отступ слева 10px. */
+}
+
+/* Стили для контента, скрытого по умолчанию */
+.content {
+    display: none; /* Скрываем содержимое по умолчанию. */
+    width: 85%; /* Ширина 85% родительского элемента. */
+    margin: 0 auto; /* Центрируем по горизонтали. */
+}
+
+/* Анимации для слайдов */
+.slide-fade-enter-active, .slide-fade-leave-active {
+    transition: opacity 0.5s; /* Плавный переход для изменения прозрачности. */
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+    opacity: 0; /* Устанавливаем прозрачность 0 при входе/выходе. */
+}
+
+/* Стили для элементов span */
+span {
+    position: relative; /* Относительное позиционирование. */
+    display: flex; /* Используем flexbox. */
+    background: #FE4646; /* Красный фон. */
+    width: 70px; /* Ширина 70px. */
+    height: 70px; /* Высота 70px. */
+    text-align: center; /* Центрируем текст. */
+    margin: -10px -30px; /* Отступы: верха и снизу -10px, сбоку -30px. */
+    justify-content: center; /* Центрируем по горизонтали. */
+    align-items: center; /* Центрируем по вертикали. */
+    color: #FFF; /* Цвет текста белый. */
+    text-align: center; /* Центрируем текст. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 40px; /* Размер шрифта 40px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Стили для закрытых блоков текста */
+.item_block:not(.opened) {
+    background: rgba(254, 70, 70, 0.51); /* Фоновая полоска для закрытых блоков. */
+}
+
+/* Отступы для элемента в шестом блоке */
+.items_block_6 {
+    margin: 70px 0; /* Отступы: сверху и снизу 70px. */
+}
+
+/* Заголовок текста в шестом блоке */
+.text_title_six {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 40px; /* Размер шрифта 40px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Заголовок текста в шестом блоке по меньшему размеру */
+.text_title_six_m {
+    color: #FFF; /* Цвет текста белый. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 32px; /* Размер шрифта 32px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 600; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+    margin: 0 20px; /* Горизонтальные отступы по 20px. */
+}
+
+/* Центрирование содержимого */
+.center {
+    display: flex; /* Используем flexbox для центрирования. */
+    justify-content: center; /* Центрируем содержимое по горизонтали. */
+    margin: 30px 0; /* Отступы сверху и снизу 30px. */
+}
+
+/* Отступы для седьмого блока */
+.seven_block {
+    margin: 60px 0 0 0; /* Отступы: сверху 60px, остальные 0. */
+}
+
+/* Стили для фонового элемента второго блока */
+.fon_two {
+    position: absolute; /* Абсолютное позиционирование. */
+    height: 938px; /* Высота фонового элемента 938px. */
+    width: 100%; /* Ширина 100%. */
+    background-repeat: no-repeat; /* Запрещаем повторение фона. */
+    object-fit: cover; /* Масштабируем фон для заполнения элемента. */
+}
+
+/* Отступы для элемента rr */
+.rr {
+    top: 45px; /* Сдвиг вверх на 45px. */
+    position: relative; /* Относительное позиционирование. */
+}
+
+/* Контейнер для карточек отзывов */
+.card_otz_container {
+    display: flex; /* Используем flexbox для контейнера отзывов. */
+    width: 100%; /* Ширина 100%. */
+    flex-wrap: wrap; /* Автоматическое оборачивание элементов. */
+}
+
+/* Стили для карточки отзыва */
+.otz_card {
+    width: 416px; /* Ширина карточки отзыва 416px. */
+    height: 228px; /* Высота карточки отзыва 228px. */
+    background: #FFF; /* Белый фон карточки отзыва. */
+    margin: 40px 80px; /* Отступы: сверху и снизу 40px, слева и справа 80px. */
+}
+
+/* Блок с изображениями в карточках отзывов */
+.iamge_all {
+    display: flex; /* Используем flexbox для блока с изображениями. */
+    justify-content: space-between; /* Пробелы между изображениями. */
+    margin: 5px 30px; /* Отступы: 5px сверху и снизу, 30px слева и справа. */
+}
+
+/* Стили для аватара */
+.avatar {
+    width: 70px; /* Ширина аватара 70px. */
+    border-radius: 70px; /* Округляем аватар полностью. */
+    margin: 0 15px 0 0; /* Отступ справа 15px. */
+}
+
+/* Стили для общего текста */
+.text_sdf {
+    color: #000; /* Цвет текста черный. */
+    text-align: left; /* Выравниваем текст по левому краю. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 11px; /* Размер шрифта 11px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Стили для имен и фамилий */
+.name_first_name {
+    color: #000; /* Цвет имени черный. */
+    font-feature-settings: 'salt' on, 'liga' off; /* Настройки шрифта для альтернативных форм. */
+
+    /* Заголовок для текста */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 18px; /* Размер шрифта 18px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 700; /* Жирный шрифт. */
+    line-height: 28px; /* Высота линии 28px. */
+    margin: 0; /* Убираем отступы. */
+}
+
+/* Стили для времени отзыва */
+.time_otz {
+    color: #000; /* Цвет времени черный. */
+    text-align: center; /* Центрируем текст времени. */
+    font-family: Inter; /* Шрифт Inter. */
+    font-size: 11px; /* Размер шрифта 11px. */
+    font-style: normal; /* Нормальный стиль шрифта. */
+    font-weight: 500; /* Полужирный шрифт. */
+    line-height: normal; /* Нормальная высота строки. */
+}
+
+/* Стили для блока отзывов */
+.felx-otz {
+    display: flex; /* Используем flexbox. */
+    align-items: center; /* Центрируем элементы по вертикали. */
+}
+
+/* Центрирование контейнера отзывов */
+.center_otz {
+    width: 90%; /* Ширина 90%. */
+    margin: 0 auto; /* Центрируем по горизонтали. */
+}
+
+
+/* Контейнер для звездного рейтинга */
+.star-rating {
+    display: flex; /* Используем flexbox для контейнера рейтинга. */
+    align-items: center; /* Центрируем элементы по вертикали. */
+    flex-direction: row-reverse; /* Обратный порядок для звездочек. */
+    justify-content: flex-end; /* Выравниваем элементы по правому краю. */
+}
+
+/* Скрываем радиокнопки для звезд */
+.star-rating input {
+    display: none; /* Скрываем радиокнопки для звезд. */
+}
+
+/* Стили для меток звезд */
+.star-rating > label {
+    width: 20px; /* Ширина метки (звезды) 20px. */
+    height: 20px; /* Высота метки (звезды) 20px. */
+    font-size: 20px; /* Размер шрифта 20px. */
+    display: block; /* Устанавливаем блочный уровень отображения. */
+    position: relative; /* Относительное позиционирование меток. */
+    font-family: Verdana; /* Шрифт Verdana. */
+}
+
+/* Установка незаполненной звезды */
+.star-rating label::before {
+    content: '\2606'; /* Устанавливаем символ незаполненной звезды. */
+    position: absolute; /* Абсолютное позиционирование. */
+    top: 0px; /* Положение сверху 0 пикселей. */
+    color: #EB5757; /* Цвет звезды красный. */
+    line-height: 20px; /* Высота линии 20px. */
+}
+
+/* Установка заполненной звезды при выборе */
+.star-rating input:checked ~ label:before {
+    content: '\2605'; /* Устанавливаем символ заполненной звезды при выборе. */
+}
+
+
+
+
+
+
+
+
+
+
+.animate {
+    opacity: 0; /* Изначально элемент невидим */
+    transform: translateY(20px); /* Элемент смещён вниз на 20 пикселей */
+    transition: opacity 0.5s, transform 0.5s; /* Плавный переход для изменения прозрачности и смещения */
+}
+
+footer {
+    top: 188px; /* Расположение футера на 188 пикселей от верхней границы */
+    background-color: black; /* Чёрный фон */
+    width: 100%; /* Ширина футера 100% от родительского элемента */
+    position: relative; /* Относительное позиционирование */
+    height: 190px; /* Высота футера 190 пикселей */
+    color: #FFF; /* Белый цвет текста */
+    font-family: Inter; /* Шрифт Inter */
+    font-size: 12px; /* Размер текста 12 пикселей */
+    font-style: normal; /* Нормальный стиль шрифта */
+    font-weight: 500; /* Полужирный шрифт */
+    line-height: normal; /* Нормальная высота строки */
+    display: flex; /* Flexbox для размещения дочерних элементов */
+    align-items: center; /* Выравнивание по вертикали по центру */
+    justify-content: center; /* Выравнивание по горизонтали по центру */
+}
+
+.footer_item {
+    width: 70%; /* Ширина элемента футера 70% */
+    margin: 0 auto; /* Автоматические отступы слева и справа для центрирования */
+}
+
+.footer_item a {
+    margin: 0 20px 0 0; /* Отступ справа 20 пикселей */
+}
+
+.footer_item_1 {
+    display: flex; /* Flexbox для размещения дочерних элементов */
+    justify-content: space-between; /* Пробелы между дочерними элементами */
+    margin: 0 0 30px; /* Отступ 30 пикселей снизу */
+}
+
+.footer_item_1 img {
+    margin: 0 0 0 20px; /* Отступ слева 20 пикселей */
+}
+
+.carousel-container, .carousel2-container, .carousel3-container {
+    display: flex; /* Flexbox для контейнеров каруселей */
+}
+
+.arrow {
+    display: none; /* По умолчанию стрелки скрыты */
+}
+
+.arrowleft {
+    transform: rotate(180deg); /* Поворот стрелки на 180 градусов */
+}
+
+.card_img {
+    width: 100%; /* Ширина изображения карточки 100% */
+}
+
+.five_block {
+    margin: 300px 0 0 0; /* Отступ сверху 300 пикселей */
+}
+
+.rr2 {
+    margin: 0 40px 0 0; /* Отступ справа 40 пикселей */
+}
+
+.mobile_cart {
+    display: none; /* Корзина для мобильных устройств скрыта по умолчанию */
+}
+
+.nav {
+    position: relative; /* Относительное позиционирование */
+    top: 100px; /* Расположение навигации на 100 пикселей от верхней границы */
+    width: 100%; /* Ширина навигации 100% */
+    background-color: #202020; /* Темно-серый фон */
+    color: white; /* Белый цвет текста */
+    height: 40px; /* Высота навигации 40 пикселей */
+    display: flex; /* Flexbox для размещения элементов навигации */
+    align-items: center; /* Выравнивание по вертикали по центру */
+}
+
+.nav_items {
+    width: 70%; /* Ширина элементов навигации 70% */
+    margin: 0 auto; /* Автоматические отступы для центрирования */
+    color: #FFF; /* Белый цвет текста */
+    font-family: Inter; /* Шрифт Inter */
+    font-size: 20px; /* Размер текста 20 пикселей */
+    font-style: normal; /* Нормальный стиль шрифта */
+    font-weight: 400; /* Обычный вес шрифта */
+    line-height: normal; /* Нормальная высота строки */
+}
+
+.stab {
+    margin: 150px 0 0 0; /* Отступ сверху 150 пикселей */
+}
+
+.about_card {
+    width: 343px; /* Ширина карточки 343 пикселя */
+    height: 500px; /* Высота карточки 500 пикселей */
+}
+
+.about_card img {
+    width: 90%; /* Ширина изображения внутри карточки 90% */
+    height: auto; /* Автоматическая высота, сохраняющая пропорции */
+}
+
+.center_card {
+    display: flex; /* Flexbox для выравнивания карточек */
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Выравнивание по центру */
+}
+
+.about_number {
+    width: 100%; /* Ширина 100% */
+    justify-content: space-around; /* Пробелы между элементами */
+}
+
+.time_about {
+    margin: 0!important; /* Отключаем отступы */
+    color: #FFF!important; /* Белый цвет текста */
+    font-family: Inter; /* Шрифт Inter */
+    font-size: 20px!important; /* Размер текста 20 пикселей */
+    font-style: normal!important; /* Нормальный стиль шрифта */
+    font-weight: 600!important; /* Полужирный шрифт */
+    line-height: normal!important; /* Нормальная высота строки */
+}
+
+.ff {
+    color: #FE4646!important; /* Красный цвет текста */
+}
+
+.text_m_about {
+    color: #FFF!important; /* Белый цвет текста */
+    font-family: Inter; /* Шрифт Inter */
+    font-size: 11px!important; /* Размер текста 11 пикселей */
+    font-style: normal!important; /* Нормальный стиль шрифта */
+    font-weight: 500!important; /* Полужирный шрифт */
+    line-height: normal!important; /* Нормальная высота строки */
+}
+
+.blo_about {
+    display: block; /* Блочное отображение */
+}
+
+.ww-80 {
+    width: 90%; /* Ширина 90% */
+    margin: 0 auto; /* Автоматические отступы для центрирования */
+}
+
+.mm {
+    margin: 5px 0; /* Вертикальный отступ 5 пикселей */
+    color: #FFF!important; /* Белый цвет текста */
+    font-family: Inter; /* Шрифт Inter */
+    font-size: 11px!important; /* Размер текста 11 пикселей */
+    font-style: normal!important; /* Нормальный стиль шрифта */
+    font-weight: 500!important; /* Полужирный шрифт */
+    line-height: normal!important; /* Нормальная высота строки */
+}
+
+.ll {
+    margin: 15px 0 0 0; /* Отступ сверху 15 пикселей */
+}
+
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed; /* Фиксированное позиционирование */
+    bottom: 0; /* Прикрепляем к низу окна */
+    left: 0; /* Прикрепляем к левому краю */
+    width: 100%; /* Ширина 100% */
+    z-index: 99; /* Уровень наложения выше, чем у большинства элементов */
+    height: 0; /* Изначально высота 0 (скрыто) */
+    overflow: hidden; /* Скрываем содержимое, выходящее за пределы */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    transition: height 0.3s ease-in-out; /* Плавное изменение высоты */
+}
+
+.modal-content {
+    background-color: #fff; /* Белый фон для содержимого модального окна */
+    margin: 0 auto; /* Убираем верхний отступ для центрирования */
+    padding: 20px; /* Отступы внутри содержимого */
+    border: 1px solid #888; /* Серый бордер вокруг содержимого */
+    width: 80%; /* Ширина содержимого 80% */
+    border-radius: 20px; /* Скруглённые углы */
+    overflow-y: scroll; /* Вертикальная прокрутка при необходимости */
+    height: 80vh; /* Высота 80% от высоты окна просмотра */
+    text-align: center; /* Центрируем текст */
+    transform: translateY(100%); /* Изначально сдвинуто вниз на 100% */
+    transition: transform 0.3s ease-in-out; /* Плавное изменение положения */
+}
+
+.content_modal {
+    overflow-y: scroll; /* Вертикальная прокрутка для содержимого модала */
+    height: max-content; /* Высота на основе содержимого */
+}
+
+.close {
+    float: right; /* Сдвинуть вправо */
+    cursor: pointer; /* Курсор указывает, что элемент кликабельный */
+}
+
+.content_modal h1 {
+    color: #000; /* Чёрный цвет заголовка */
+    text-align: center; /* Центрируем заголовок */
+    font-family: Inter; /* Шрифт Inter */
+    font-size: 40px; /* Размер заголовка 40 пикселей */
+    font-style: normal; /* Нормальный стиль шрифта */
+    font-weight: 700; /* Полужирный шрифт */
+    line-height: normal; /* Нормальная высота строки */
+}
+
+.checkbox-container {
+    display: flex; /* Flexbox для размещения чекбоксов */
+    flex-wrap: wrap; /* Элементы будут обтекать по строкам */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    margin-bottom: 10px; /* Отступ снизу 10 пикселей */
+    color: var(--black, #262626); /* Цвет текста по умолчанию чёрный */
+    text-align: center; /* Центрируем текст */
+    font-family: 'Roboto', sans-serif; /* Шрифт Roboto */
+    font-size: 22px; /* Размер текста 22 пикселя */
+    font-weight: 400; /* Обычный вес шрифта */
+    line-height: normal; /* Нормальная высота строки */
+}
+
+.checkbox-label {
+    display: flex; /* Flexbox для размещения чекбокса и его метки */
+    margin: 5px; /* Отступы между элементами */
+    width: calc(50% - 4px); /* Устанавливаем ширину для создания двух столбцов */
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 15px; /* Отступ справа от чекбокса */
+    width: 20px; /* Ширина чекбокса */
+    height: 20px; /* Высота чекбокса */
+    border-radius: 8px; /* Скруглённые углы чекбокса */
+    border: 1px solid #E1E1E1; /* Серый бордер чекбокса */
+    background: #FFF; /* Белый фон чекбокса */
+}
+
+.oform {
+    width: 388px; /* Ширина формы */
+    height: 88px; /* Высота формы */
+    flex-shrink: 0; /* Запрещаем уменьшение размера формы */
+    background-color: #FE4646; /* Фон формы красный */
+    color: #FFF; /* Белый цвет текста */
+    text-align: center; /* Центрируем текст */
+    font-family: Inter; /* Шрифт Inter */
+    font-size: 32px; /* Размер текста 32 пикселя */
+    font-style: normal; /* Нормальный стиль шрифта */
+    font-weight: 600; /* Полужирный шрифт */
+    line-height: normal; /* Нормальная высота строки */
+    border: none; /* Без бордюра */
+    border-radius: 50px; /* Скруглённые углы для формы */
+}
+
+.podr {
+    color: var(--black, #262626); /* Цвет текста по умолчанию чёрный */
+    text-align: center; /* Центрируем текст */
+    font-family: Roboto; /* Шрифт Roboto */
+    font-size: 20px; /* Размер текста 20 пикселей */
+    font-style: normal; /* Нормальный стиль шрифта */
+    font-weight: 400; /* Обычный вес шрифта */
+    line-height: normal; /* Нормальная высота строки */
+}
+
+.itogo {
+    color: #000; /* Чёрный цвет текста */
+    text-align: center; /* Центрируем текст */
+    font-family: Inter; /* Шрифт Inter */
+    font-size: 40px; /* Размер текста 40 пикселей */
+    font-style: normal; /* Нормальный стиль шрифта */
+    font-weight: 700; /* Полужирный шрифт */
+    line-height: normal; /* Нормальная высота строки */
+}
+
+.dop {
+    color: var(--black, #262626); /* Цвет текста по умолчанию чёрный */
+    font-family: Roboto; /* Шрифт Roboto */
+    font-size: 20px; /* Размер текста 20 пикселей */
+    font-style: normal; /* Нормальный стиль шрифта */
+    font-weight: 600; /* Полужирный шрифт */
+    line-height: normal; /* Нормальная высота строки */
+}
+
+.title_name_modal {
+    color: #000; /* Чёрный цвет текста */
+    text-align: center; /* Центрируем текст */
+    font-family: Inter; /* Шрифт Inter */
+    font-size: 40px; /* Размер текста 40 пикселей */
+    font-style: normal; /* Нормальный стиль шрифта */
+    font-weight: 700; /* Полужирный шрифт */
+    line-height: normal; /* Нормальная высота строки */
+}
+
+.modal-header {
+    height: 50px; /* Высота заголовка модального окна 50 пикселей */
+    width: 100%; /* Ширина заголовка 100% */
+}
+
+.close {
+    width: 40px; /* Ширина кнопки закрытия 40 пикселей */
+    height: 40px; /* Высота кнопки закрытия 40 пикселей */
+    margin: 0; /* Без внешнего отступа */
+    font-size: 30px; /* Размер шрифта для кнопки закрытия 30 пикселей */
+    border-radius: 10px; /* Скруглённые углы для кнопки закрытия */
+}
+
+@media (max-width: 1440px) {
+    .tt {
+        margin: 40px 0 0 80px; /* Отступы для класса .tt при ширине экрана до 1440px */
+    }
+}
+
+@media (max-width: 960px) {
+    .rer {
+        display: flex; /* Flexbox для класс .rer */
+        flex-direction: column; /* Вертикальное размещение элементов */
+        align-items: center; /* Центрирование по горизонтали */
+    }
+
+    .mobile_cart {
+        display: block; /* Показываем корзину для мобильных устройств */
+    }
+
+    .city {
+        display: none; /* Скрываем элемент .city */
+    }
+
+    .time {
+        display: none; /* Скрываем элемент .time */
+    }
+
+    .onelist_container {
+        display: block; /* Показываем контейнер с одним элементом */
+    }
+
+    .text_title_p {
+        display: none; /* Скрываем элемент .text_title_p */
+    }
+
+    .text_block {
+        margin: 0 0 100px 0; /* Отступы для класса .text_block */
+        text-align: center; /* Центрируем текст */
+    }
+
+    .logo_container img {
+        /* Помещаем стили для логотипа, если необходимо */
+    }
+
+    .medium-logo-text {
+        /* Помещаем стили для средних логотипов, если необходимо */
+    }
+
+    .start-kin {
+        /* Помещаем стили для начала кинопередач, если необходимо */
+    }
+
+    .body_block {
+        top: 140px; /* Изменяем верхний отступ для блока body при ширине экрана до 960px */
+    }
+
+    .text_title {
+        font-weight: 600; /* Полужирный шрифт для заголовка */
+    }
+
+    .form_cont {
+        width: 100%; /* Ширина формы 100% */
+        margin: 0 0 100px 0; /* Отступы для формы */
+    }
+
+    .fon_img {
+        height: 1020px; /* Высота фонового изображения */
+    }
+
+    .fon_violet {
+        height: 1020px; /* Высота другого фонового изображения */
+    }
+
+    .img_block {
+        display: none; /* Скрываем блок с изображениями */
+    }
+
+    .pod_text_two_title {
+        width: auto; /* Ширина автоматически под размер содержимого */
+    }
+
+    .two_block_text_title {
+        width: auto; /* Ширина автоматически под размер содержимого */
+    }
+
+    .sheme_img {
+        margin: 0; /* Убираем отступы для изображений схем */
+        width: 100%; /* Ширина 100% */
+        height: auto; /* Автоматическая высота, сохраняющая пропорции */
+    }
+
+    .three_block_container h2 {
+        font-size: 22px; /* Размер шрифта для заголовков h2 */
+    }
+
+    .div_card_container {
+        flex-direction: column; /* Вертикальное размещение для контейнера карточек */
+        align-items: center; /* Центрирование по горизонтали */
+    }
+
+    .card {
+        margin: 0 0 50px 0; /* Отступы для карточек */
+    }
+
+    .pred_two {
+        margin: 50px 0 0 0; /* Отступы для класса .pred_two */
+    }
+
+    .title_four h1 {
+        font-size: 30px; /* Размер заголовка h1 */
+    }
+
+    .cc3 {
+        margin: 0; /* Убираем все отступы для класса cc3 */
+    }
+
+    .card_item_four_cont {
+        margin: 0; /* Убираем все отступы для карточек класса card_item_four_cont */
+    }
+
+    .section_card {
+        margin: 0 0 50px 0; /* Отступы для класса section_card */
+    }
+
+    .carousel-container, .carousel2-container, .carousel3-container {
+        width: 100%; /* Ширина каруселей 100% */
+        overflow: hidden; /* Скрываем элементы, выходящие за пределы */
+        position: relative; /* Относительное позиционирование для каруселей */
+        height: 300px; /* Высота карусели */
+    }
+
+    .carousel-slides {
+        display: flex; /* Flexbox для размещения слайдов карусели */
+        width: 100%; /* Ширина слайдов 100% */
+    }
+
+    .carousel-slide, .carousel2-slide, .carousel3-slide {
+        display: flex; /* Flexbox для размещения элементов в слайде */
+        position: absolute; /* Абсолютное позиционирование слайдов */
+        opacity: 0; /* Изначально слайды невидимы */
+        flex: 0 0 100%; /* Ширина слайда 100% от родительского элемента */
+        justify-content: center; /* Центрируем содержимое по горизонтали */
+        align-items: center; /* Центрируем содержимое по вертикали */
+    }
+
+    .carousel-slide img {
+        width: 100%; /* Ширина изображения в слайде 100% */
+        transform: translateY(-50px); /* Сдвигаем изображение вверх на 50 пикселей */
+        opacity: 0; /* Изначально изображение невидимо */
+        transition: 0.5s ease-in; /* Плавный переход для изменения непрозрачности */
+    }
+
+    .carousel2-slide img {
+        width: 100%; /* Ширина изображения в слайде 100% */
+        transform: translateY(-50px); /* Сдвигаем изображение вверх на 50 пикселей */
+        opacity: 0; /* Изначально изображение невидимо */
+        transition: 0.5s ease-in; /* Плавный переход для изменения непрозрачности */
+    }
+
+    .carousel3-slide img {
+        width: 100%; /* Ширина изображения в слайде 100% */
+        transform: translateY(-50px); /* Сдвигаем изображение вверх на 50 пикселей */
+        opacity: 0; /* Изначально изображение невидимо */
+        transition: 0.5s ease-in; /* Плавный переход для изменения непрозрачности */
+    }
+
+    .carousel-slide.active, .carousel2-slide.active, .carousel3-slide.active {
+        opacity: 1; /* Устанавливаем непрозрачность для активного слайда */
+        position: static; /* Меняем позиционирование для активного слайда */
+    }
+
+    .carousel-slide.active img {
+        transform: translateY(0); /* Возвращаем изображение в исходное положение */
+        opacity: 1; /* Устанавливаем непрозрачность 1 для активного изображения */
+    }
+
+    .carousel2-slide.active img {
+        transform: translateY(0); /* Возвращаем изображение в исходное положение */
+        opacity: 1; /* Устанавливаем непрозрачность 1 для активного изображения */
+    }
+
+    .carousel3-slide.active img {
+        transform: translateY(0); /* Возвращаем изображение в исходное положение */
+        opacity: 1; /* Устанавливаем непрозрачность 1 для активного изображения */
+    }
+
+    #prev-btn, #next-btn, #prev-btn2, #next-btn2, #prev-btn3, #next-btn3 {
+        position: absolute; /* Абсолютное позиционирование для кнопок навигации */
+        top: 50%; /* Расположение кнопки по центру по вертикали */
+        transform: translateY(-50%); /* Центрируем кнопку по вертикали */
+        width: 40px; /* Ширина кнопки навигации */
+        height: 40px; /* Высота кнопки навигации */
+        background-color: #fff; /* Белый фон кнопок */
+        color: #fff; /* Белый цвет текста внутри кнопок */
+        border: none; /* Без бордюра */
+        border-radius: 146px; /* Скруглённые углы кнопок */
+        cursor: pointer; /* Курсор в виде руки при наведении на кнопки */
+        display: flex; /* Flexbox для центрирования содержимого кнопок */
+        align-items: center; /* Центрирование по вертикали */
+        justify-content: center; /* Центрирование по горизонтали */
+    }
+
+    .arrow {
+        height: 17px; /* Высота стрелки */
+        width: 14px; /* Ширина стрелки */
+        display: block; /* Отображаем стрелку */
+    }
+
+    #prev-btn, #prev-btn2, #prev-btn3 {
+        left: 10px; /* Расположение кнопки слева на 10 пикселей */
+    }
+
+    #next-btn, #next-btn2, #next-btn3 {
+        right: 10px; /* Расположение кнопки справа на 10 пикселей */
+    }
+
+    .flex-row {
+        align-items: flex-start; /* Выравнивание дочерних элементов по верхнему краю */
+        flex-direction: column; /* Вертикальное расположение элементов */
+    }
+
+    .pred_two {
+        margin: 0 0 50px 0; /* Отступы для класса .pred_two */
+    }
+
+    .five_block {
+        margin: 150px 0 0 0; /* Отступы для класса .five_block */
+    }
+
+    .items_block_6 {
+        margin: 15px 0; /* Вертикальный отступ 15 пикселей для блоков класса .items_block_6 */
+    }
+
+    .text_title_six_m {
+        margin: 0; /* Убираем отступы для заголовка .text_title_six_m */
+        font-size: 15px; /* Размер шрифта 15 пикселей */
+    }
+
+    .text_title_six {
+        margin: 5px 0; /* Вертикальный отступ 5 пикселей для заголовка .text_title_six */
+    }
+
+    .seven_block {
+        display: none; /* Скрываем семой блок */
+    }
+
+    footer {
+        top: 50px; /* Расположение футера на 50 пикселей от верхней границы */
+        height: 230px; /* Высота футера 230 пикселей */
+    }
+
+    .footer_item {
+        width: 80%; /* Ширина элемента футера 80% */
+    }
+
+    .block a {
+        margin: 5px 0; /* Отступы для ссылок в блоке */
+    }
+
+    .collum {
+        display: flex; /* Flexbox для размещения элементов в колонне */
+        flex-direction: column; /* Вертикальное расположение элементов */
+    }
+
+    .block {
+        display: flex; /* Flexbox для размещения дочерних элементов блока */
+        align-items: flex-end; /* Выравнивание по нижнему краю */
+        justify-content: space-between; /* Пробел между элементами */
+    }
+
+    .footer_item_1 {
+        margin: 0 0 15px; /* Отступы снизу элемента футера */
+    }
+
+    .img_cart {
+        display: none; /* Скрываем изображение для корзины */
+    }
+
+    .about_card {
+        margin: 30px 0; /* Вертикальный отступ для карточки */
+    }
+
+    .modal-content {
+        margin: 15% auto; /* Центрируем модальное содержимое с отступом сверху 15% */
+    }
+
+    .container_block {
+        width: 90%; /* Ширина контейнера 90% */
+    }
+
+    .input_form {
+        width: 80%; /* Ширина полей ввода 80% */
+    }
+
+    .oform {
+        width: 80%; /* Ширина формы 80% */
+        font-size: 20px; /* Размер текста формы 20 пикселей */
+    }
+
+    .itogo {
+        font-size: 32px; /* Размер текста для итоговой суммы 32 пикселя */
+    }
+
+    .item p {
+        font-size: 12px; /* Размер текста для элемента p внутри item 12 пикселей */
+    }
+}
